@@ -85,7 +85,7 @@ jobs:
         shell: bash
         run: |
           cd build_cxx_test
-          make test VERBOSE=1
+          ctest -V
 
       - name: upload test log
         if: always()
