@@ -85,7 +85,7 @@ jobs:
         shell: bash
         run: |
           cd build_cxx_test
-          ctest -V
+          make test
 
       - name: upload test log
         if: always()
